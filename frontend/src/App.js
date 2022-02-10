@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import Home from "./Home";
+import Home from "./components/Home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import InventoryList from "./InventoryList";
-import InventoryEdit from "./InventoryEdit";
-import "./App.css";
+import BookList from "./components/BookList";
+import BookEdit from "./components/BookEdit";
 
 class App extends Component {
   render() {
@@ -11,8 +10,8 @@ class App extends Component {
       <Router>
         <Switch>
           <Route path='/' exact={true} component={Home} />
-          <Route path='/inventories' exact={true} component={InventoryList} />
-          <Route path='/inventories/:id' component={InventoryEdit} />
+          <Route path='/inventories' exact={true} component={BookList} />
+          <Route path='/inventories/:id' component={BookEdit} />
         </Switch>
       </Router>
     );

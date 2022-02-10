@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 app.use(bodyParser.json())
-require('./app/models/inventory.model.js');
+require('./app/models/book.model.js');
 
 //configuring the database
 require('dotenv').config();
@@ -22,7 +22,7 @@ mongoose.connection
 });
 
 //create the server and port
-require('./app/routes/inventory.router.js')(app);
+require('./app/routes/book.router.js')(app);
 //create a server
 const server = app.listen(8080, function() {
     const host = server.address().address

@@ -52,7 +52,7 @@ class BookList extends Component {
                 size="sm"
                 color="primary"
                 tag={Link}
-                to={"/books/" + book._id}
+                to={"/book/" + book._id}
               >
                 Edit
               </Button>
@@ -78,9 +78,9 @@ class BookList extends Component {
               color="success"
               className="my-4"
               tag={Link}
-              to="/books/new"
+              to="/book/new"
             >
-              Add inventory
+              Add Book
             </Button>
           </div>
           <h3>Book List</h3>

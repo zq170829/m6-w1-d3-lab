@@ -10,8 +10,8 @@ class App extends Component {
       <Router>
         <Switch>
           <Route path='/' exact={true} component={Home} />
-          <Route path='/inventories' exact={true} component={BookList} />
-          <Route path='/inventories/:id' component={BookEdit} />
+          <Route path='/books' exact={true} component={BookList} />
+          <Route path='/book/:id' component={BookEdit} />
         </Switch>
       </Router>
     );
